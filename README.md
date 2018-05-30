@@ -2,8 +2,8 @@
 Simple devices designed from scratch and specialized to fit my custom CNC machine hardware and settings.  
 
 ## Parts included in the library
-Resistors: Horizontally placed, 1/4W and 1/2W axial, through hole.  
-TODO: Vertically placed resistors  
+Resistors: Horizontally placed, 1/4W, 1/2W, and 1W axial, through hole.  
+Resistors: Vertically placed, 1/4W, 1/2W, and 1W axial, through hole.  
 TODO: Capacitors  
 TODO: LEDS, Diodes and transistors  
 TODO: Connectors with 2 and 3 terminals which have 3mm or 5mm spans  

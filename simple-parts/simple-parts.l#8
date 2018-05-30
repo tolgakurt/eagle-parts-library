@@ -64,16 +64,16 @@
 <wire x1="3.25" y1="1.25" x2="3.25" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="3.25" y1="-1.25" x2="-3.25" y2="-1.25" width="0.127" layer="21"/>
 <wire x1="-3.25" y1="-1.25" x2="-3.25" y2="1.25" width="0.127" layer="21"/>
-<pad name="P$1" x="-4.5" y="0" drill="0.6" diameter="2.8"/>
-<pad name="P$2" x="4.5" y="0" drill="0.6" diameter="2.8"/>
+<pad name="P$1" x="-5" y="0" drill="0.6" diameter="2.5"/>
+<pad name="P$2" x="5" y="0" drill="0.6" diameter="2.5"/>
 </package>
 <package name="HOR.50W">
 <wire x1="-4.25" y1="1.75" x2="4.25" y2="1.75" width="0.127" layer="21"/>
 <wire x1="4.25" y1="1.75" x2="4.25" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="4.25" y1="-1.75" x2="-4.25" y2="-1.75" width="0.127" layer="21"/>
 <wire x1="-4.25" y1="-1.75" x2="-4.25" y2="1.75" width="0.127" layer="21"/>
-<pad name="P$1" x="-5.5" y="0" drill="0.6" diameter="3.2"/>
-<pad name="P$2" x="5.5" y="0" drill="0.6" diameter="3.2"/>
+<pad name="P$1" x="-6" y="0" drill="0.6" diameter="2.5"/>
+<pad name="P$2" x="6" y="0" drill="0.6" diameter="2.5"/>
 </package>
 </packages>
 <symbols>
