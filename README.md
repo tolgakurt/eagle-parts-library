@@ -4,7 +4,8 @@ Simple devices designed from scratch and specialized to fit my custom CNC machin
 ## Parts included in the library
 Resistors: Horizontally placed, 1/4W, 1/2W, and 1W axial, through hole.  
 Resistors: Vertically placed, 1/4W, 1/2W, and 1W axial, through hole.  
-TODO: Capacitors  
+Capacitors: Ceramic capacitors with 0.5mm lead diameters, 3.2mm and 5.6mm leg spacings.  
+TODO: Electrolytic capacitors  
 TODO: LEDS, Diodes and transistors  
 TODO: Connectors with 2 and 3 terminals which have 3mm or 5mm spans  
 TODO: DIP8 chips with 8 and 16 legs  
