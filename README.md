@@ -13,8 +13,8 @@ TODO: 5 pin relays
 
 ## EAGLE settings
 Trace width: 0.4mm  
-Pads should preferably be circular with a diameter of at least 2.5mm  
-Drill diameters should preferably be 0.1mm more than the lead diameter of the physical parts.  
+Pads should preferably be circular with a diameter of at least 2.5mm and preferably 3.0mm for easy soldering.  
+Drill diameters should preferably be 0.1mm more than the lead diameter of the physical parts. However, 0.9mm can be used for most of the parts, even if the lead diameter is 0.5, to avoid tool change.  
 
 ## EAGLE pcb-gcode settings
 Spot drill holes: -0.2mm  
@@ -25,10 +25,10 @@ Z-down when etching: -0.3mm for Proxxon V bit in 28710 package
 
 Isolation:  
 Min: 0.0  
-Max: 0.2mm  
-Step size: 0.2mm  
+Max: 0.3mm  
+Step size: 0.15mm  
 
 Feed rates in mm/min:  
-Etch -> XY: 200, Z: 100  
+Etch -> XY: 150, Z: 100  
 Drill -> Z: 100  
 Mill -> XY: 100, Z: 50  
