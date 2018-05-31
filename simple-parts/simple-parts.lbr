@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -143,6 +143,65 @@
 <wire x1="3.5" y1="1.7" x2="3.5" y2="-1.7" width="0.127" layer="21"/>
 <wire x1="3.5" y1="-1.7" x2="-3.5" y2="-1.7" width="0.127" layer="21"/>
 </package>
+<package name="ECAP5.8S5.2D">
+<pad name="P$1" x="-2.9" y="0" drill="0.9" diameter="3"/>
+<pad name="P$2" x="2.9" y="0" drill="0.9" diameter="3"/>
+<text x="-3.16" y="4.18" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.16" y="2.81" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="2.6" width="0.127" layer="21"/>
+</package>
+<package name="ECAP3.2S4.0D">
+<pad name="P$1" x="-1.6" y="0" drill="0.9" diameter="2.5"/>
+<pad name="P$2" x="1.6" y="0" drill="0.9" diameter="2.5"/>
+<text x="-3.16" y="3.38" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.16" y="2.11" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="2" width="0.127" layer="21"/>
+</package>
+<package name="TANCAP17.0S">
+<pad name="P$1" x="-8.5" y="0" drill="0.9" diameter="3"/>
+<pad name="P$2" x="8.5" y="0" drill="0.9" diameter="3"/>
+<text x="-3.16" y="0.38" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.16" y="-1.69" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-8.5" y1="4.5" x2="8.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="8.5" y1="4.5" x2="8.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="8.5" y1="-4.5" x2="-8.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-8.5" y1="-4.5" x2="-8.5" y2="4.5" width="0.127" layer="21"/>
+</package>
+<package name="ECAP3.2S5.0D">
+<pad name="P$1" x="-1.6" y="0" drill="0.9" diameter="2.5"/>
+<pad name="P$2" x="1.6" y="0" drill="0.9" diameter="2.5"/>
+<text x="-3.16" y="4.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.16" y="2.71" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="21"/>
+</package>
+<package name="ECAP5.8S6.4D">
+<pad name="P$1" x="-2.9" y="0" drill="0.9" diameter="3"/>
+<pad name="P$2" x="2.9" y="0" drill="0.9" diameter="3"/>
+<text x="-3.26" y="4.68" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.26" y="3.31" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="3.2" width="0.127" layer="21"/>
+</package>
+<package name="ECAP5.8S8.0D">
+<pad name="P$1" x="-2.9" y="0" drill="0.9" diameter="3"/>
+<pad name="P$2" x="2.9" y="0" drill="0.9" diameter="3"/>
+<text x="-3.16" y="5.48" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.16" y="4.11" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="4" width="0.127" layer="21"/>
+</package>
+<package name="ECAP5.8S10.0D">
+<pad name="P$1" x="-2.9" y="0" drill="0.9" diameter="3"/>
+<pad name="P$2" x="2.9" y="0" drill="0.9" diameter="3"/>
+<text x="-3.36" y="2.78" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.56" y="1.51" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="5" width="0.127" layer="21"/>
+</package>
+<package name="ECAP5.8S13.2D">
+<pad name="P$1" x="-2.9" y="0" drill="0.9" diameter="3"/>
+<pad name="P$2" x="2.9" y="0" drill="0.9" diameter="3"/>
+<text x="-3.36" y="2.78" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.56" y="1.51" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="6.6" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -164,6 +223,16 @@
 <wire x1="-2.12" y1="-2.54" x2="-2.12" y2="2.54" width="0.254" layer="94"/>
 <pin name="P$1" x="-7.2" y="0" visible="off" length="middle" direction="pas"/>
 <pin name="P$2" x="7.2" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="ECAPACITOR">
+<text x="-5.08" y="4.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="2.71" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-2.12" y1="-2.54" x2="-2.12" y2="2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.2" y="0" visible="off" length="middle" direction="pas"/>
+<pin name="P$2" x="5.2" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+<wire x1="2.6" y1="-2.6" x2="2.6" y2="2.6" width="0.254" layer="94" curve="-180"/>
+<wire x1="-4.1" y1="1.4" x2="-3.1" y2="1.4" width="0.254" layer="94"/>
+<wire x1="-3.6" y1="1.9" x2="-3.6" y2="0.9" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -243,6 +312,85 @@
 </technologies>
 </device>
 <device name="CERCAP5.6S" package="CERCAP5.6S">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TANCAP17.0S" package="TANCAP17.0S">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ECAPACITOR" prefix="EC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="ECAPACITOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ECAP3.2S4.0D" package="ECAP3.2S4.0D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ECAP3.2S5.0D" package="ECAP3.2S5.0D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ECAP5.8S10.0D" package="ECAP5.8S10.0D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ECAP5.8S13.2D" package="ECAP5.8S13.2D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ECAP5.8S5.2D" package="ECAP5.8S5.2D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ECAP5.8S6.4D" package="ECAP5.8S6.4D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ECAP5.8S8.0D" package="ECAP5.8S8.0D">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
