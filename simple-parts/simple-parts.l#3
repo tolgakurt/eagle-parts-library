@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -243,6 +243,26 @@
 <text x="-3" y="2.9" size="1.27" layer="26">&gt;NAME</text>
 <text x="-3" y="1.5" size="1.27" layer="28">&gt;VALUE</text>
 </package>
+<package name="RD9.5S3.2D">
+<pad name="P$1" x="-4.75" y="0" drill="0.9" diameter="3"/>
+<pad name="P$2" x="4.75" y="0" drill="0.9" diameter="3"/>
+<text x="-3.3" y="3.1" size="1.27" layer="26">&gt;NAME</text>
+<text x="-3.3" y="1.7" size="1.27" layer="28">&gt;VALUE</text>
+<wire x1="-3.2" y1="1.6" x2="3.2" y2="1.6" width="0.127" layer="21"/>
+<wire x1="3.2" y1="1.6" x2="3.2" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="3.2" y1="-1.6" x2="-3.2" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-3.2" y1="-1.6" x2="-3.2" y2="1.6" width="0.127" layer="21"/>
+</package>
+<package name="RD14.0S5.2D">
+<pad name="P$1" x="-7" y="0" drill="1.2" diameter="3"/>
+<pad name="P$2" x="7" y="0" drill="1.2" diameter="3"/>
+<text x="-3.6" y="0.4" size="1.27" layer="26">&gt;NAME</text>
+<text x="-3.6" y="-1.6" size="1.27" layer="28">&gt;VALUE</text>
+<wire x1="-4.6" y1="2.6" x2="4.6" y2="2.6" width="0.127" layer="21"/>
+<wire x1="4.6" y1="2.6" x2="4.6" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="4.6" y1="-2.6" x2="-4.6" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-4.6" y1="-2.6" x2="-4.6" y2="2.6" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -322,6 +342,22 @@
 <wire x1="-2.6" y1="2.5" x2="2.6" y2="0" width="0.254" layer="94"/>
 <wire x1="2.6" y1="0" x2="-2.6" y2="-2.5" width="0.254" layer="94"/>
 <wire x1="2.48" y1="-2.54" x2="2.48" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.9" y1="1.4" x2="-3.1" y2="1.4" width="0.254" layer="94"/>
+<wire x1="-4" y1="2.4" x2="-4" y2="0.5" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ZENDIODE">
+<text x="-4.48" y="4.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.42" y="2.74" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-2.62" y1="-2.54" x2="-2.62" y2="2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="-10.24" y="0" visible="off" direction="pas"/>
+<pin name="P$2" x="10.24" y="0" visible="off" direction="pas" rot="R180"/>
+<wire x1="-2.6" y1="2.5" x2="2.6" y2="0" width="0.254" layer="94"/>
+<wire x1="2.6" y1="0" x2="-2.6" y2="-2.5" width="0.254" layer="94"/>
+<wire x1="2.48" y1="-2.54" x2="2.48" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.8" y1="1.6" x2="-3.1" y2="1.6" width="0.254" layer="94"/>
+<wire x1="-4" y1="2.6" x2="-4" y2="0.7" width="0.254" layer="94"/>
+<wire x1="2.5" y1="2.6" x2="1.6" y2="2.6" width="0.254" layer="94"/>
+<wire x1="2.5" y1="-2.6" x2="3.4" y2="-2.6" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -537,6 +573,40 @@
 <connect gate="G$1" pin="B" pad="2"/>
 <connect gate="G$1" pin="C" pad="3"/>
 <connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RECTDIODE" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RECTDIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="RD8.0S2.6D" package="RD8.0S2.6D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RD9.5S3.2D" package="RD9.5S3.2D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RD14.0S5.2D" package="RD14.0S5.2D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
