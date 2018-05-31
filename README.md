@@ -6,7 +6,8 @@ Resistors: Horizontally placed, 1/4W, 1/2W, and 1W axial, through hole.
 Resistors: Vertically placed, 1/4W, 1/2W, and 1W axial, through hole.  
 Capacitors: Apolar capacitors with 3.2mm and 5.6mm leg spacings. Also one film capacitor with 17mm leg spacing. Electrolytic capacitors 3.2mm and 5.6mm leg spacings and diameters from 4mm to 13.2mm.  
 Transistors: BJT-NPN and BJT-PNP type transistors with TO18 and TO92 packages.  
-TODO: LEDS and Diodes  
+Rectifier diodes: 1N series in 3 packages.  
+TODO: LEDS and Zener Diodes  
 TODO: Connectors with 2 and 3 terminals which have 3mm or 5mm spans  
 TODO: DIP8 chips with 8 and 16 legs  
 TODO: 5 pin relays  
