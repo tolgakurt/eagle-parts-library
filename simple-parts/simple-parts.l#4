@@ -90,8 +90,8 @@
 <wire x1="-1.25" y1="-1.25" x2="-1.25" y2="1.25" width="0.127" layer="21"/>
 </package>
 <package name="VER.50W">
-<pad name="P$1" x="-3" y="0" drill="0.6" diameter="2"/>
-<pad name="P$2" x="0" y="0" drill="0.6" diameter="2"/>
+<pad name="P$1" x="-3.5" y="0" drill="0.9" diameter="2.5"/>
+<pad name="P$2" x="0" y="0" drill="0.9" diameter="2.5"/>
 <text x="-4.16" y="3.05" size="1.27" layer="25">&gt;NAME</text>
 <text x="-4.16" y="1.78" size="1.27" layer="27">&gt;VALUE</text>
 <wire x1="-1.6" y1="1.6" x2="1.6" y2="1.6" width="0.127" layer="21"/>
@@ -110,8 +110,8 @@
 <wire x1="-5.5" y1="-2.5" x2="-5.5" y2="2.5" width="0.127" layer="21"/>
 </package>
 <package name="VER1.0W">
-<pad name="P$1" x="-4" y="0" drill="0.8" diameter="2.5"/>
-<pad name="P$2" x="0" y="0" drill="0.8" diameter="2.5"/>
+<pad name="P$1" x="-4" y="0" drill="0.9" diameter="2.5"/>
+<pad name="P$2" x="0" y="0" drill="0.9" diameter="2.5"/>
 <text x="-4.41" y="3.82" size="1.27" layer="25">&gt;NAME</text>
 <text x="-4.41" y="2.55" size="1.27" layer="27">&gt;VALUE</text>
 <wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>

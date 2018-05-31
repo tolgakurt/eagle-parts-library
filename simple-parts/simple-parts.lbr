@@ -136,12 +136,12 @@
 <package name="CERCAP5.6S">
 <pad name="P$1" x="-2.8" y="0" drill="0.9" diameter="3"/>
 <pad name="P$2" x="2.8" y="0" drill="0.9" diameter="3"/>
-<text x="-3.06" y="2.98" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.06" y="1.61" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="-2.5" y1="1.25" x2="2.5" y2="1.25" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-1.25" x2="-2.5" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="1.25" x2="-2.5" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-1.25" x2="2.5" y2="1.25" width="0.127" layer="21"/>
+<text x="-3.16" y="3.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.16" y="1.81" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-3.5" y1="-1.7" x2="-3.5" y2="1.7" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="1.7" x2="3.5" y2="1.7" width="0.127" layer="21"/>
+<wire x1="3.5" y1="1.7" x2="3.5" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-1.7" x2="-3.5" y2="-1.7" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
