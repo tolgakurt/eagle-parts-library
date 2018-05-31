@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -56,6 +56,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
@@ -202,6 +203,36 @@
 <text x="-3.56" y="1.51" size="1.27" layer="27">&gt;VALUE</text>
 <circle x="0" y="0" radius="6.6" width="0.127" layer="21"/>
 </package>
+<package name="TO92" urn="urn:adsk.eagle:footprint:29726/1" locally_modified="yes">
+<description>&lt;b&gt;TO 92&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-2.6549" y2="-0.254" width="0.127" layer="21" curve="-32.781"/>
+<wire x1="-2.6549" y1="-0.254" x2="-0.7863" y2="2.5485" width="0.127" layer="21" curve="-78.3185"/>
+<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.127" layer="21" curve="-111.1"/>
+<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.2537" y1="-0.254" x2="-0.2863" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-2.6549" y1="-0.254" x2="-2.2537" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="-0.2863" y1="-0.254" x2="0.2863" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="0.2863" y1="-0.254" x2="2.2537" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="51" curve="-34.2936"/>
+<pad name="1" x="1.7" y="0" drill="0.9" diameter="2.5"/>
+<pad name="2" x="0" y="3" drill="0.9" diameter="2.5"/>
+<pad name="3" x="-1.7" y="0" drill="0.9" diameter="2.5"/>
+<text x="-3.025" y="-3.065" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.025" y="-4.57" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="TO18" urn="urn:adsk.eagle:footprint:29724/1" locally_modified="yes">
+<description>&lt;b&gt;TO 18&lt;/b&gt;</description>
+<wire x1="-3.937" y1="-0.508" x2="-3.937" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-3.937" y1="-0.508" x2="-2.8765" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-3.937" y1="0.508" x2="-2.8765" y2="0.508" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.921" width="0.127" layer="21"/>
+<pad name="1" x="-1.6" y="-1.6" drill="0.9" diameter="2.5"/>
+<pad name="2" x="1.6" y="-1.6" drill="0.9" diameter="2.5"/>
+<pad name="3" x="1.6" y="1.6" drill="0.9" diameter="2.5"/>
+<text x="-3.125" y="4.6" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.125" y="3.195" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -233,6 +264,44 @@
 <wire x1="2.6" y1="-2.6" x2="2.6" y2="2.6" width="0.254" layer="94" curve="-180"/>
 <wire x1="-4.1" y1="1.4" x2="-3.1" y2="1.4" width="0.254" layer="94"/>
 <wire x1="-3.6" y1="1.9" x2="-3.6" y2="0.9" width="0.254" layer="94"/>
+</symbol>
+<symbol name="BJTNPN">
+<description>Bipolar NPN Transistor</description>
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="3.302" x2="7.62" y2="2.032" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.032" x2="7.62" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.286" x2="7.62" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.032" x2="10.16" y2="4.064" width="0.254" layer="94"/>
+<wire x1="10.16" y1="4.064" x2="10.16" y2="5.334" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.286" x2="10.16" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-4.064" x2="10.16" y2="-5.334" width="0.254" layer="94"/>
+<wire x1="9.652" y1="-3.81" x2="9.652" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="9.652" y1="-3.81" x2="8.89" y2="-3.81" width="0.254" layer="94"/>
+<pin name="B" x="0" y="0" length="middle"/>
+<pin name="C" x="10.16" y="10.16" length="middle" rot="R270"/>
+<pin name="E" x="10.16" y="-10.16" length="middle" rot="R90"/>
+<circle x="8.636" y="0" radius="5.588" width="0.254" layer="94"/>
+<text x="14.34" y="-2.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="13.34" y="-4.86" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="BJTPNP">
+<description>Bipolar PNP Transistor</description>
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-3.302" x2="7.62" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.032" x2="7.62" y2="2.286" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.286" x2="7.62" y2="3.302" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.032" x2="10.16" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-4.064" x2="10.16" y2="-5.334" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.286" x2="10.16" y2="4.064" width="0.254" layer="94"/>
+<wire x1="10.16" y1="4.064" x2="10.16" y2="5.334" width="0.254" layer="94"/>
+<wire x1="8.382" y1="2.794" x2="8.382" y2="3.556" width="0.254" layer="94"/>
+<wire x1="8.382" y1="2.794" x2="9.144" y2="2.794" width="0.254" layer="94"/>
+<pin name="B" x="0" y="0" length="middle"/>
+<pin name="C" x="10.16" y="-10.16" length="middle" rot="R90"/>
+<pin name="E" x="10.16" y="10.16" length="middle" rot="R270"/>
+<circle x="8.636" y="0" radius="5.588" width="0.254" layer="94"/>
+<text x="14.2" y="-2.96" size="1.778" layer="95">&gt;NAME</text>
+<text x="13" y="-4.98" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -333,19 +402,10 @@
 </deviceset>
 <deviceset name="ECAPACITOR" prefix="EC" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="CAPACITOR" x="0" y="0"/>
+<gate name="G$1" symbol="ECAPACITOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="ECAP3.2S4.0D" package="ECAP3.2S4.0D">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="ECAP5.8S5.2D" package="ECAP5.8S5.2D">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
@@ -363,9 +423,105 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="ECAP5.8S10.0D" package="ECAP5.8S10.0D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ECAP5.8S13.2D" package="ECAP5.8S13.2D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ECAP5.8S5.2D" package="ECAP5.8S5.2D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ECAP5.8S6.4D" package="ECAP5.8S6.4D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ECAP5.8S8.0D" package="ECAP5.8S8.0D">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BJTNPN" prefix="Q" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="BJTNPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TO92NPN" package="TO92">
+<connects>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO18NPN" package="TO18">
+<connects>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BJTPNP" prefix="Q" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="BJTPNP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TO92PNP" package="TO92">
+<connects>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
