@@ -4,14 +4,16 @@ Simple devices designed from scratch and specialized to fit my custom CNC machin
 ## Parts included in the library
 Resistors: Horizontally placed, 1/4W, 1/2W, and 1W axial, through hole.  
 Resistors: Vertically placed, 1/4W, 1/2W, and 1W axial, through hole.  
-Capacitors: Apolar capacitors with 3.2mm and 5.6mm leg spacings. Also one film capacitor with 17mm leg spacing. Electrolytic capacitors 3.2mm and 5.6mm leg spacings and diameters from 4mm to 13.2mm.  
+Apolar capacitors: 3.2mm and 5.6mm leg spacings. Also one film capacitor with 17mm leg spacing.  
+Electrolytic capacitors: 3.2mm and 5.6mm leg spacings and diameters from 4mm to 13.2mm.  
 Transistors: BJT-NPN and BJT-PNP type transistors with TO18 and TO92 packages.  
 Rectifier diodes: 1N series in 3 packages.  
 Zener diodes: 3.3V to 30V, common package.  
-TODO: LEDS  
+Light emitting diodes: Low power leds with 3.2mm leg spacing and 5mm diameter.  
 TODO: Connectors with 2 and 3 terminals which have 3mm or 5mm spans  
 TODO: DIP8 chips with 8 and 16 legs  
 TODO: 5 pin relays  
+TODO: 78xx voltage regulators  
 
 ## EAGLE settings
 Trace width: 0.4mm  
