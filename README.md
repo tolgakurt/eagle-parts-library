@@ -11,9 +11,9 @@ Rectifier diodes: 1N series in 3 packages.
 Zener diodes: 3.3V to 30V, common package.  
 Light emitting diodes: Low power leds with 3.2mm leg spacing and 5mm diameter.  
 Terminal connectors:  2 and 3 terminal connectors with 3mm and 5mm leg spacings.  
+78xx voltage regulators: In TO220 package.
 TODO: DIP8 chips with 8 and 16 legs  
 TODO: 5 pin relays  
-TODO: 78xx voltage regulators  
 TODO: ESP8266-01 board  
 
 ## EAGLE settings

@@ -289,6 +289,29 @@
 <pad name="P$2" x="1.5" y="0" drill="0.9" diameter="2.5"/>
 <text x="-3.2" y="1.7" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="CON3.0S3T">
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<pad name="P$1" x="-3" y="0" drill="0.9" diameter="2.5"/>
+<pad name="P$2" x="0" y="0" drill="0.9" diameter="2.5"/>
+<text x="-3.2" y="1.7" size="1.27" layer="25">&gt;NAME</text>
+<pad name="P$3" x="3" y="0" drill="0.9" diameter="2.5"/>
+<wire x1="-3.5" y1="3.5" x2="-5.3" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-5.3" y1="3.5" x2="-5.3" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-5.3" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="5.3" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="5.3" y1="-3.5" x2="5.3" y2="3.5" width="0.127" layer="21"/>
+<wire x1="5.3" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+</package>
+<package name="CON5.0S2T">
+<pad name="P$1" x="-2.5" y="0" drill="1.2" diameter="3"/>
+<pad name="P$2" x="2.5" y="0" drill="1.2" diameter="3"/>
+<text x="-3.2" y="1.7" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-5" y1="3.7" x2="5" y2="3.7" width="0.127" layer="21"/>
+<wire x1="5" y1="3.7" x2="5" y2="-3.7" width="0.127" layer="21"/>
+<wire x1="5" y1="-3.7" x2="-5" y2="-3.7" width="0.127" layer="21"/>
+<wire x1="-5" y1="-3.7" x2="-5" y2="3.7" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -404,8 +427,8 @@
 <wire x1="1.5" y1="-2.9" x2="1.5" y2="-2.2" width="0.254" layer="94"/>
 </symbol>
 <symbol name="CON2">
-<pin name="P$1" x="-2.54" y="-2.54" length="middle" rot="R90"/>
-<pin name="P$2" x="2.54" y="-2.54" visible="pin" length="middle" rot="R90"/>
+<pin name="P$1" x="-1.5" y="-2" length="middle" rot="R90"/>
+<pin name="P$2" x="1.5" y="-2" visible="pin" length="middle" rot="R90"/>
 </symbol>
 <symbol name="CON3">
 <pin name="P$1" x="-3" y="-2" length="middle" rot="R90"/>
