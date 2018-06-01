@@ -14,7 +14,7 @@ Terminal connectors:  2 and 3 terminal connectors with 3mm and 5mm leg spacings.
 78xx voltage regulators: In TO220 package.  
 Relays: Generic 5 pin relay with 12mm leg spacing in corners.  
 Pin/plug connectors: With 2 and 8 (4x2) legs.  
-TODO: ESP8266-01 board  
+ESP8266E01: Development board.  
 
 ## EAGLE settings
 Trace width: 0.4mm  

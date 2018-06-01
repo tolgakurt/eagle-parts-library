@@ -360,6 +360,21 @@
 <wire x1="-2.5" y1="-1.25" x2="-2.5" y2="1.25" width="0.127" layer="21"/>
 <text x="-2.9" y="1.45" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="PINPLUG4X2">
+<pad name="P$1" x="-3.81" y="1.27" drill="0.9" diameter="2.2" shape="square"/>
+<pad name="P$2" x="-1.27" y="1.27" drill="0.9" diameter="2.2" shape="square"/>
+<pad name="P$3" x="1.27" y="1.27" drill="0.9" diameter="2.2" shape="square"/>
+<pad name="P$4" x="3.81" y="1.27" drill="0.9" diameter="2.2" shape="square"/>
+<pad name="P$5" x="3.81" y="-1.27" drill="0.9" diameter="2.2" shape="square"/>
+<pad name="P$6" x="1.27" y="-1.27" drill="0.9" diameter="2.2" shape="square"/>
+<pad name="P$7" x="-1.27" y="-1.27" drill="0.9" diameter="2.2" shape="square"/>
+<pad name="P$8" x="-3.81" y="-1.27" drill="0.9" diameter="2.2" shape="square"/>
+<wire x1="-5" y1="2.5" x2="5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="5" y1="2.5" x2="5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="5" y1="-2.5" x2="-5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2.5" x2="-5" y2="2.5" width="0.127" layer="21"/>
+<text x="-3" y="2.8" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -525,6 +540,17 @@
 <pin name="P$6" x="2.54" y="-2.54" length="middle" rot="R270"/>
 <pin name="P$7" x="-2.54" y="-2.54" length="middle" rot="R270"/>
 <pin name="P$8" x="-7.62" y="-2.54" length="middle" rot="R270"/>
+<text x="-10.16" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+</symbol>
+<symbol name="ESP8266E01">
+<pin name="GND" x="-7.62" y="2.54" length="middle" rot="R90"/>
+<pin name="GPIO2" x="-2.54" y="2.54" length="middle" rot="R90"/>
+<pin name="GPIO0" x="2.54" y="2.54" length="middle" rot="R90"/>
+<pin name="RX" x="7.62" y="2.54" length="middle" rot="R90"/>
+<pin name="VCC" x="7.62" y="-2.54" length="middle" rot="R270"/>
+<pin name="RESET" x="2.54" y="-2.54" length="middle" rot="R270"/>
+<pin name="CH_PD" x="-2.54" y="-2.54" length="middle" rot="R270"/>
+<pin name="TX" x="-7.62" y="-2.54" length="middle" rot="R270"/>
 <text x="-10.16" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 </symbol>
 </symbols>
@@ -902,7 +928,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINPLUG2X1" prefix="PP">
+<deviceset name="PINPLUG2" prefix="PP">
 <gates>
 <gate name="G$1" symbol="PINPLUG2" x="0" y="0"/>
 </gates>
@@ -911,6 +937,28 @@
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PINPLUG8" prefix="PP">
+<gates>
+<gate name="G$1" symbol="PINPLUG8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PINPLUG4X2" package="PINPLUG4X2">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
+<connect gate="G$1" pin="P$8" pad="P$8"/>
 </connects>
 <technologies>
 <technology name=""/>
