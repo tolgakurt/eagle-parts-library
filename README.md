@@ -24,7 +24,9 @@ Drill diameters should preferably be 0.1mm more than the lead diameter of the ph
 Since the isolation step is 0.15mm and maximum isolation distance is set to 0.3mm, the pad perimeters should not be closer than 0.3mm. The traces come out to be generally greater than this, so they should have a minimum spacing of 0.45mm. TODO: check these numbers.   
 
 ## EAGLE pcb-gcode settings
-Spot drill holes: -0.2mm  
+Spot drill holes: Off  
+
+Milling depth: -1.5  
 
 Drill depth: -1.7mm (or PCB thickness - 0.2mm)  
 
