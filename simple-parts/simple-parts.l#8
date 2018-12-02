@@ -244,8 +244,8 @@
 <text x="-3" y="1.5" size="1.27" layer="28">&gt;VALUE</text>
 </package>
 <package name="RD9.5S3.2D">
-<pad name="P$1" x="-4.75" y="0" drill="0.9" diameter="3"/>
-<pad name="P$2" x="4.75" y="0" drill="0.9" diameter="3"/>
+<pad name="P+" x="-4.75" y="0" drill="0.9" diameter="3"/>
+<pad name="P-" x="4.75" y="0" drill="0.9" diameter="3"/>
 <text x="-3.3" y="3.1" size="1.27" layer="26">&gt;NAME</text>
 <text x="-3.3" y="1.7" size="1.27" layer="28">&gt;VALUE</text>
 <wire x1="-3.2" y1="1.6" x2="3.2" y2="1.6" width="0.127" layer="21"/>
@@ -254,8 +254,8 @@
 <wire x1="-3.2" y1="-1.6" x2="-3.2" y2="1.6" width="0.127" layer="21"/>
 </package>
 <package name="RD14.0S5.2D">
-<pad name="P$1" x="-7" y="0" drill="1.2" diameter="3"/>
-<pad name="P$2" x="7" y="0" drill="1.2" diameter="3"/>
+<pad name="P+" x="-7" y="0" drill="1.2" diameter="3"/>
+<pad name="P-" x="7" y="0" drill="1.2" diameter="3"/>
 <text x="-3.6" y="0.4" size="1.27" layer="26">&gt;NAME</text>
 <text x="-3.6" y="-1.6" size="1.27" layer="28">&gt;VALUE</text>
 <wire x1="-4.6" y1="2.6" x2="4.6" y2="2.6" width="0.127" layer="21"/>
@@ -901,8 +901,8 @@ Source: TDA1516BQ_1.pdf</description>
 </device>
 <device name="RD9.5S3.2D" package="RD9.5S3.2D">
 <connects>
-<connect gate="G$1" pin="P+" pad="P$1"/>
-<connect gate="G$1" pin="P-" pad="P$2"/>
+<connect gate="G$1" pin="P+" pad="P+"/>
+<connect gate="G$1" pin="P-" pad="P-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -910,8 +910,8 @@ Source: TDA1516BQ_1.pdf</description>
 </device>
 <device name="RD14.0S5.2D" package="RD14.0S5.2D">
 <connects>
-<connect gate="G$1" pin="P+" pad="P$1"/>
-<connect gate="G$1" pin="P-" pad="P$2"/>
+<connect gate="G$1" pin="P+" pad="P+"/>
+<connect gate="G$1" pin="P-" pad="P-"/>
 </connects>
 <technologies>
 <technology name=""/>

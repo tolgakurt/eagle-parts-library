@@ -254,8 +254,8 @@
 <wire x1="-3.2" y1="-1.6" x2="-3.2" y2="1.6" width="0.127" layer="21"/>
 </package>
 <package name="RD14.0S5.2D">
-<pad name="P$1" x="-7" y="0" drill="1.2" diameter="3"/>
-<pad name="P$2" x="7" y="0" drill="1.2" diameter="3"/>
+<pad name="P+" x="-7" y="0" drill="1.2" diameter="3"/>
+<pad name="P-" x="7" y="0" drill="1.2" diameter="3"/>
 <text x="-3.6" y="0.4" size="1.27" layer="26">&gt;NAME</text>
 <text x="-3.6" y="-1.6" size="1.27" layer="28">&gt;VALUE</text>
 <wire x1="-4.6" y1="2.6" x2="4.6" y2="2.6" width="0.127" layer="21"/>
@@ -449,17 +449,17 @@
 <description>&lt;b&gt;DBS13P&lt;/b&gt; plastic DIL-bent-SIL power package&lt;p&gt;
 13 leads (lead length 12 mm) SOT141-6&lt;br&gt;
 Source: TDA1516BQ_1.pdf</description>
-<pad name="1" x="-8.5" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
-<pad name="2" x="-6.8" y="0" drill="1" diameter="2.4" shape="offset" rot="R90"/>
-<pad name="3" x="-5.1" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
-<pad name="4" x="-3.4" y="0" drill="1" diameter="2.4" shape="offset" rot="R90"/>
-<pad name="5" x="-1.7" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
-<pad name="6" x="0" y="0" drill="1" diameter="2.4" shape="offset" rot="R90"/>
-<pad name="7" x="1.7" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
-<pad name="8" x="3.4" y="0" drill="1" diameter="2.4" shape="offset" rot="R90"/>
-<pad name="9" x="5.1" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
-<pad name="10" x="6.8" y="0" drill="1" diameter="2.4" shape="offset" rot="R90"/>
-<pad name="11" x="8.5" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
+<pad name="IN1+" x="-8.5" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
+<pad name="IN1-" x="-6.8" y="0" drill="1" diameter="2.4" shape="offset" rot="R90"/>
+<pad name="SVRR" x="-5.1" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
+<pad name="IN2-" x="-3.4" y="0" drill="1" diameter="2.4" shape="offset" rot="R90"/>
+<pad name="IN2+" x="-1.7" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
+<pad name="GND" x="0" y="0" drill="1" diameter="2.4" shape="offset" rot="R90"/>
+<pad name="BOOT2" x="1.7" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
+<pad name="OUT2" x="3.4" y="0" drill="1" diameter="2.4" shape="offset" rot="R90"/>
+<pad name="VS+" x="5.1" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
+<pad name="OUT1" x="6.8" y="0" drill="1" diameter="2.4" shape="offset" rot="R90"/>
+<pad name="BOOT1" x="8.5" y="-5.08" drill="1" diameter="2.4" shape="offset" rot="R270"/>
 <text x="-3.43" y="6.445" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="4.445" size="1.27" layer="27">&gt;VALUE</text>
 <wire x1="-10" y1="0" x2="10" y2="0" width="0.127" layer="21"/>
@@ -910,8 +910,8 @@ Source: TDA1516BQ_1.pdf</description>
 </device>
 <device name="RD14.0S5.2D" package="RD14.0S5.2D">
 <connects>
-<connect gate="G$1" pin="P+" pad="P$1"/>
-<connect gate="G$1" pin="P-" pad="P$2"/>
+<connect gate="G$1" pin="P+" pad="P+"/>
+<connect gate="G$1" pin="P-" pad="P-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1235,17 +1235,17 @@ Source: TDA1516BQ_1.pdf</description>
 <devices>
 <device name="TDA2005" package="TDA2005">
 <connects>
-<connect gate="G$1" pin="BOOT1" pad="11"/>
-<connect gate="G$1" pin="BOOT2" pad="7"/>
-<connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="IN1+" pad="1"/>
-<connect gate="G$1" pin="IN1-" pad="2"/>
-<connect gate="G$1" pin="IN2+" pad="5"/>
-<connect gate="G$1" pin="IN2-" pad="4"/>
-<connect gate="G$1" pin="OUT1" pad="10"/>
-<connect gate="G$1" pin="OUT2" pad="8"/>
-<connect gate="G$1" pin="SVRR" pad="3"/>
-<connect gate="G$1" pin="VS+" pad="9"/>
+<connect gate="G$1" pin="BOOT1" pad="BOOT1"/>
+<connect gate="G$1" pin="BOOT2" pad="BOOT2"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN1+" pad="IN1+"/>
+<connect gate="G$1" pin="IN1-" pad="IN1-"/>
+<connect gate="G$1" pin="IN2+" pad="IN2+"/>
+<connect gate="G$1" pin="IN2-" pad="IN2-"/>
+<connect gate="G$1" pin="OUT1" pad="OUT1"/>
+<connect gate="G$1" pin="OUT2" pad="OUT2"/>
+<connect gate="G$1" pin="SVRR" pad="SVRR"/>
+<connect gate="G$1" pin="VS+" pad="VS+"/>
 </connects>
 <technologies>
 <technology name=""/>
