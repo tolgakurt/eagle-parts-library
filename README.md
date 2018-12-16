@@ -16,7 +16,7 @@ LM317 voltage adjuster: In TO220 package.
 TDA2005L integrated cirtcuit: In 11 pin DIP package.  
 Fuse mounts: For PCB and box surface.  
 Relays: Generic 5 pin relay with 12mm leg spacing in corners and common leg placed in between signal legs.  
-Pin/plug connectors: With 2 and 8 (4x2) legs.  
+Pin/plug connectors: With 1, 2, and 8 (4x2) legs.  
 ESP8266E01: Development board.  
 
 ## EAGLE settings
@@ -32,7 +32,7 @@ Spot drill holes: Off
 
 Milling depth: -1.5  
 
-Drill depth: -1.7mm (or PCB thickness - 0.2mm)  
+Drill depth: -1.8mm (or PCB thickness - 0.3mm)  
 
 Z-down when etching: -0.3mm for Proxxon V bit in 28710 package  
 
@@ -42,6 +42,6 @@ Max: 0.3mm
 Step size: 0.15mm  
 
 Feed rates in mm/min:  
-Etch -> XY: 250, Z: 100  
+Etch -> XY: 300, Z: 100  
 Drill -> Z: 100  
 Mill -> XY: 100, Z: 50  

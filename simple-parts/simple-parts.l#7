@@ -268,8 +268,8 @@
 <wire x1="1.8" y1="1" x2="1.8" y2="-1" width="0.127" layer="21"/>
 <wire x1="1.8" y1="-1" x2="-1.8" y2="-1" width="0.127" layer="21"/>
 <wire x1="-1.8" y1="-1" x2="-1.8" y2="1" width="0.127" layer="21"/>
-<pad name="P$1" x="-3" y="0" drill="0.9" diameter="3"/>
-<pad name="P$2" x="3" y="0" drill="0.9" diameter="3"/>
+<pad name="P+" x="-3" y="0" drill="0.9" diameter="3"/>
+<pad name="P-" x="3" y="0" drill="0.9" diameter="3"/>
 <text x="-3.2" y="3" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.2" y="1.6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -926,8 +926,8 @@ Source: TDA1516BQ_1.pdf</description>
 <devices>
 <device name="ZD6.0S2.0D" package="ZD6.0S2.0D">
 <connects>
-<connect gate="G$1" pin="P+" pad="P$1"/>
-<connect gate="G$1" pin="P-" pad="P$2"/>
+<connect gate="G$1" pin="P+" pad="P+"/>
+<connect gate="G$1" pin="P-" pad="P-"/>
 </connects>
 <technologies>
 <technology name=""/>
