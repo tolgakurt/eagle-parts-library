@@ -15,9 +15,10 @@ Terminal connectors: 2 and 3 terminal connectors with 3mm and 5mm leg spacings.
 LM317 voltage adjuster: In TO220 package.  
 TDA2005L integrated cirtcuit: In 11 pin DIP package.  
 Fuse mounts: For PCB and box surface.  
-Relays: Generic 5 pin relay with 12mm leg spacing in corners and common leg placed in between signal legs.  
+Relays: Generic 5 pin relays in which the common leg is placed in between signal legs.  
 Pin/plug connectors: With 1, 2, and 8 (4x2) legs.  
 ESP8266E01: Development board.  
+Enclosed PCB transformers: With single or double primary windings.  
 
 ## EAGLE settings
 Trace width: 0.4mm  
