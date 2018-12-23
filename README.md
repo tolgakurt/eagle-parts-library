@@ -19,6 +19,7 @@ Relays: Generic 5 pin relays in which the common leg is placed in between signal
 Pin/plug connectors: With 1, 2, and 8 (4x2) legs.  
 ESP8266E01: Development board.  
 Enclosed PCB transformers: With single or double primary windings.  
+Shortcuts: Since I cannot (and don't want to) print double sided PCBs, but I have to, these will behave as simple shortcuts over the PCB. Now, only a 5mm exist. This distance is from perimeter to perimeter.  
 
 ## EAGLE settings
 Trace width: 0.4mm  

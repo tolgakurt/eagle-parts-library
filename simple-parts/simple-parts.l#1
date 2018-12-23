@@ -556,6 +556,10 @@ Source: TDA1516BQ_1.pdf</description>
 <wire x1="8" y1="-13" x2="8" y2="2" width="0.127" layer="21"/>
 <wire x1="8" y1="2" x2="5" y2="2" width="0.127" layer="21"/>
 </package>
+<package name="SHORT5">
+<pad name="P$1" x="-6.5" y="0" drill="0.9" diameter="3"/>
+<pad name="P$2" x="6.5" y="0" drill="0.9" diameter="3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -821,6 +825,10 @@ Source: TDA1516BQ_1.pdf</description>
 <wire x1="1" y1="-8" x2="3" y2="-8" width="0.254" layer="94" curve="-180"/>
 <pin name="OUT2" x="-1" y="-11" visible="pin" length="short" direction="pas" rot="R90"/>
 <pin name="OUT3" x="1" y="-11" visible="pin" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="SHORT">
+<pin name="P$1" x="-3" y="0" length="point" rot="R90"/>
+<pin name="P$2" x="3" y="0" length="point" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1131,6 +1139,16 @@ Source: TDA1516BQ_1.pdf</description>
 </gates>
 <devices>
 <device name="TO220" package="TO220">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="P$2"/>
+<connect gate="G$1" pin="VI" pad="P$1"/>
+<connect gate="G$1" pin="VO" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO220HEATSINK" package="TO220HEATSINK">
 <connects>
 <connect gate="G$1" pin="ADJ" pad="P$2"/>
 <connect gate="G$1" pin="VI" pad="P$1"/>
@@ -1466,6 +1484,22 @@ Source: TDA1516BQ_1.pdf</description>
 <connect gate="G$1" pin="IN2" pad="5"/>
 <connect gate="G$1" pin="OUT1" pad="7"/>
 <connect gate="G$1" pin="OUT2" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SHORT">
+<gates>
+<gate name="G$1" symbol="SHORT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SHORT5" package="SHORT5">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
