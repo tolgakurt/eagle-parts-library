@@ -501,11 +501,25 @@ Source: TDA1516BQ_1.pdf</description>
 <pad name="6" x="-10" y="-12.5" drill="0.9" diameter="3"/>
 <pad name="9" x="5" y="-12.5" drill="0.9" diameter="3"/>
 <pad name="7" x="-5" y="-12.5" drill="0.9" diameter="3"/>
-<pad name="1" x="-10" y="12.5" drill="0.9" diameter="3"/>
-<pad name="2" x="10" y="12.5" drill="0.9" diameter="3"/>
+<pad name="5" x="-10" y="12.5" drill="0.9" diameter="3"/>
+<pad name="1" x="10" y="12.5" drill="0.9" diameter="3"/>
 <text x="-2.7" y="2.7" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.6" y="0.6" size="1.27" layer="27">&gt;VALUE</text>
-<pad name="P$1" x="10" y="-12.5" drill="0.9" diameter="3"/>
+<pad name="10" x="10" y="-12.5" drill="0.9" diameter="3"/>
+</package>
+<package name="TRANS1:2-32.5W27.5L">
+<wire x1="-16.25" y1="13.75" x2="16.25" y2="13.75" width="0.127" layer="21"/>
+<wire x1="16.25" y1="13.75" x2="16.25" y2="-13.75" width="0.127" layer="21"/>
+<wire x1="16.25" y1="-13.75" x2="-16.25" y2="-13.75" width="0.127" layer="21"/>
+<wire x1="-16.25" y1="-13.75" x2="-16.25" y2="13.75" width="0.127" layer="21"/>
+<pad name="6" x="-10" y="-10" drill="0.9" diameter="3"/>
+<pad name="9" x="5" y="-10" drill="0.9" diameter="3"/>
+<pad name="7" x="-5" y="-10" drill="0.9" diameter="3"/>
+<pad name="5" x="-10" y="10" drill="0.9" diameter="3"/>
+<pad name="1" x="10" y="10" drill="0.9" diameter="3"/>
+<text x="-2.7" y="2.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.6" y="0.6" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="10" x="10" y="-10" drill="0.9" diameter="3"/>
 </package>
 </packages>
 <symbols>
@@ -1346,6 +1360,26 @@ Source: TDA1516BQ_1.pdf</description>
 <device name="PINPLUG1" package="PINPLUG1">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANS1:2">
+<gates>
+<gate name="G$1" symbol="TRANS1:2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TRANS1:2-41W35L" package="TRANS1:2-41W35L">
+<connects>
+<connect gate="G$1" pin="IN1" pad="5"/>
+<connect gate="G$1" pin="IN2" pad="1"/>
+<connect gate="G$1" pin="OUT1" pad="6"/>
+<connect gate="G$1" pin="OUT2" pad="7"/>
+<connect gate="G$1" pin="OUT3" pad="9"/>
+<connect gate="G$1" pin="OUT4" pad="10"/>
 </connects>
 <technologies>
 <technology name=""/>

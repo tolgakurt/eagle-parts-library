@@ -521,6 +521,41 @@ Source: TDA1516BQ_1.pdf</description>
 <text x="-2.6" y="0.6" size="1.27" layer="27">&gt;VALUE</text>
 <pad name="10" x="10" y="-10" drill="0.9" diameter="3"/>
 </package>
+<package name="TRANS1:1-32.5W27.5L">
+<wire x1="-16.25" y1="13.75" x2="16.25" y2="13.75" width="0.127" layer="21"/>
+<wire x1="16.25" y1="13.75" x2="16.25" y2="-13.75" width="0.127" layer="21"/>
+<wire x1="16.25" y1="-13.75" x2="-16.25" y2="-13.75" width="0.127" layer="21"/>
+<wire x1="-16.25" y1="-13.75" x2="-16.25" y2="13.75" width="0.127" layer="21"/>
+<pad name="9" x="5" y="-10" drill="0.9" diameter="3"/>
+<pad name="7" x="-5" y="-10" drill="0.9" diameter="3"/>
+<pad name="5" x="-10" y="10" drill="0.9" diameter="3"/>
+<pad name="1" x="10" y="10" drill="0.9" diameter="3"/>
+<text x="-2.7" y="2.7" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.6" y="0.6" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="TO220HEATSINK">
+<wire x1="-5" y1="2.2" x2="5" y2="2.2" width="0.127" layer="21"/>
+<wire x1="5" y1="2.2" x2="5" y2="2" width="0.127" layer="21"/>
+<wire x1="5" y1="2" x2="5" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="5" y1="-2.2" x2="-5" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2.2" x2="-5" y2="2" width="0.127" layer="21"/>
+<pad name="P$1" x="-2.5" y="0" drill="0.9" diameter="2.5"/>
+<pad name="P$2" x="0" y="-2" drill="0.9" diameter="2.5"/>
+<pad name="P$3" x="2.5" y="0" drill="0.9" diameter="2.5"/>
+<text x="-3.3" y="4.4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.3" y="3" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="1.27" size="0.8128" layer="21" align="bottom-center">HEAT</text>
+<wire x1="-5" y1="2" x2="-5" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-9" y1="3" x2="9" y2="3" width="0.127" layer="21"/>
+<wire x1="-9" y1="3" x2="-9" y2="-13" width="0.127" layer="21"/>
+<wire x1="-9" y1="-13" x2="-8" y2="-13" width="0.127" layer="21"/>
+<wire x1="-8" y1="-13" x2="-8" y2="2" width="0.127" layer="21"/>
+<wire x1="-8" y1="2" x2="-5" y2="2" width="0.127" layer="21"/>
+<wire x1="9" y1="3" x2="9" y2="-13" width="0.127" layer="21"/>
+<wire x1="9" y1="-13" x2="8" y2="-13" width="0.127" layer="21"/>
+<wire x1="8" y1="-13" x2="8" y2="2" width="0.127" layer="21"/>
+<wire x1="8" y1="2" x2="5" y2="2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1230,6 +1265,16 @@ Source: TDA1516BQ_1.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="TO220HEATSINK" package="TO220HEATSINK">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="P$1"/>
+<connect gate="G$1" pin="VI" pad="P$3"/>
+<connect gate="G$1" pin="VO" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CAPPOLAR" prefix="EC" uservalue="yes">
@@ -1393,6 +1438,24 @@ Source: TDA1516BQ_1.pdf</description>
 <connect gate="G$1" pin="OUT2" pad="7"/>
 <connect gate="G$1" pin="OUT3" pad="9"/>
 <connect gate="G$1" pin="OUT4" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANS1:1">
+<gates>
+<gate name="G$1" symbol="TRANS1:1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TRANS1:1-32.5W27.5L" package="TRANS1:1-32.5W27.5L">
+<connects>
+<connect gate="G$1" pin="IN1" pad="1"/>
+<connect gate="G$1" pin="IN2" pad="5"/>
+<connect gate="G$1" pin="OUT1" pad="7"/>
+<connect gate="G$1" pin="OUT2" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>

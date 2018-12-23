@@ -11,8 +11,8 @@ Rectifier diodes: 1N series in 3 packages.
 Zener diodes: 3.3V to 30V, common package.  
 Light emitting diodes: Low power leds with 3.2mm leg spacing and 5mm diameter.  
 Terminal connectors: 2 and 3 terminal connectors with 3mm and 5mm leg spacings.  
-78xx and LM1117 voltage regulators: In TO220 package.  
-LM317 voltage adjuster: In TO220 package.  
+78xx and LM1117 voltage regulators: In TO220 package. An additional package for a regular heatsink.  
+LM317 voltage adjuster: In TO220 package. An additional package for a regular heatsink.  
 TDA2005L integrated cirtcuit: In 11 pin DIP package.  
 Fuse mounts: For PCB and box surface.  
 Relays: Generic 5 pin relays in which the common leg is placed in between signal legs.  
