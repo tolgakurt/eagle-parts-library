@@ -16,34 +16,35 @@ LM317 voltage adjuster: In TO220 package. An additional package for a regular he
 TDA2005L integrated cirtcuit: In 11 pin DIP package.  
 Fuse mounts: For PCB and box surface.  
 Relays: Generic 5 pin relays in which the common leg is placed in between signal legs.  
-Pin/plug connectors: With 1, 2, and 8 (4x2) legs.  
+Pin/plug connectors: With 1, 2, 4, 6, 8, 4x2, and 8x2 legs.  
 ESP8266E01: Development board.  
 Enclosed PCB transformers: With single or double primary windings.  
 Shortcuts: Since I cannot (and don't want to) print double sided PCBs, but I have to, these will behave as simple shortcuts over the PCB. Now, only a 5mm exist. This distance is from perimeter to perimeter.  
+IC mounts: With 8, 14, and 16 legs.  
 
 ## EAGLE settings
-Trace width: 0.4mm  
+Trace width: 0.5mm for signal, 1.0mm for AC line  
 Pads should preferably be circular with a diameter of at least 2.5mm and preferably 3.0mm for easy soldering. However, sometimes the legs should not be bent to achieve these numbers, as in the case of pin/plug connectors with 2.54 mm leg spacings. The number can be diminished to the limits as long as the result fits DRC rules.  
 Drill diameters should preferably be 0.1mm more than the lead diameter of the physical parts. However, 0.9mm can be used for most of the parts, even if the lead diameter is 0.5, to avoid tool change.  
 
 ## EAGLE DRC rules
-Since the isolation step is 0.15mm and maximum isolation distance is set to 0.3mm, the pad perimeters should not be closer than 0.3mm. The traces come out to be generally greater than this, so they should have a minimum spacing of 0.45mm. TODO: check these numbers.   
+Pad perimeters should not be closer than 0.3mm. The traces come out to be generally greater than this, so they should have a minimum spacing of 0.4mm. TODO: check these numbers.   
 
 ## EAGLE pcb-gcode settings
+Bottom side mirror: Off  
+
 Spot drill holes: Off  
 
-Milling depth: -1.5  
+Milling depth: -1.5 (if only perimeter will be milled)  
+Milling depth: -0.5 (if an inner path will also be milled)  
 
 Drill depth: -1.8mm (or PCB thickness - 0.3mm)  
 
-Z-down when etching: -0.3mm for Proxxon V bit in 28710 package  
+Z-down when etching: -0.4mm for Proxxon V bit in 28710 package  
 
-Isolation:  
-Min: 0.0  
-Max: 0.3mm  
-Step size: 0.15mm  
+Isolation: single pass  
 
 Feed rates in mm/min:  
-Etch -> XY: 300, Z: 100  
+Etch -> XY: 250, Z: 100  
 Drill -> Z: 100  
-Mill -> XY: 100, Z: 50  
+Mill -> XY: 150, Z: 100  
