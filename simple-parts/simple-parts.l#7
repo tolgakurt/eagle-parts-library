@@ -1002,6 +1002,17 @@ Source: TDA1516BQ_1.pdf</description>
 <pin name="P$5" x="5.08" y="5.08" length="middle" rot="R270"/>
 <pin name="P$6" x="7.62" y="5.08" length="middle" rot="R270"/>
 </symbol>
+<symbol name="PINPLUG8">
+<pin name="P$1" x="-10.16" y="5.08" length="middle" rot="R270"/>
+<pin name="P$2" x="-7.62" y="5.08" length="middle" rot="R270"/>
+<text x="-2.54" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
+<pin name="P$3" x="-5.08" y="5.08" length="middle" rot="R270"/>
+<pin name="P$4" x="-2.54" y="5.08" length="middle" rot="R270"/>
+<pin name="P$5" x="2.54" y="5.08" length="middle" rot="R270"/>
+<pin name="P$6" x="5.08" y="5.08" length="middle" rot="R270"/>
+<pin name="P$7" x="7.62" y="5.08" length="middle" rot="R270"/>
+<pin name="P$8" x="10.16" y="5.08" length="middle" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RESISTOR" prefix="R" uservalue="yes">
