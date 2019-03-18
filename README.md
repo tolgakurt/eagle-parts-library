@@ -2,6 +2,7 @@
 Simple devices designed from scratch and specialized to fit my custom CNC machine hardware and settings. Will be extended whenever a new part is required in a circuit I wish to make.  
 
 ## Parts included in the library
+Supply rails: +3V3, +5V, and GND rails.  
 Resistors: Horizontally and vertically placed, 1/4W, 1/2W, and 1W axial, through hole.  
 Apolar capacitors: 3.2mm and 5.6mm leg spacings. Also one film capacitor with 17mm leg spacing.  
 Electrolytic capacitors: 3.2mm and 5.6mm leg spacings and diameters from 4mm to 13.2mm.  

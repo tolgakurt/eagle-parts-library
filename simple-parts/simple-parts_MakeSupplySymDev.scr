@@ -1,0 +1,30 @@
+# Auto Generated at 18.03.2019 20:38<br>
+# EAGLE Version 9.0.1 Copyright (c) 1988-2018 Autodesk, Inc.;
+
+SET UNDO_LOG OFF;
+
+Grid mm;
+Set Wire_Bend 2;
+Edit 'GND.sym';
+Pin 'GND' Sup None Point R270 Off 0 (0 2.54);
+Layer 96;
+Change Size 1.778;
+Change Ratio 12;
+Change Font Proportional;
+Text '>VALUE' R0 (-2.2225 -2.54);
+Layer 94;
+Change Style Continuous;
+Wire  0.254 (1.1113 1.5875) (0 1.5875) (-1.1113 1.5875);
+Wire  0.1524 (0 2.54) (0 1.5875);
+Wire  0.254 (0.635 0.7938) (-0.635 0.7938);
+Wire  0.254 (0.1587 0) (-0.1588 0);
+Grid mil;
+
+GRID MIL
+EDIT 'GND.dev'
+Prefix 'V';
+Description '<b>SUPPLY SYMBOL</b>';
+Value Off;
+Add GND 'G$1' Next 0 (0 0);
+Technology '';
+SET UNDO_LOG ON;
