@@ -1,5 +1,5 @@
 # eagle-parts-library
-Simple devices designed from scratch and specialized to fit my custom CNC machine hardware and settings. Will be extended whenever a new part is required in a circuit I wish to make.  
+Simple devices designed from scratch and specialized to fit [my custom CNC machine](https://github.com/tolgakurt/my-custom-cnc) hardware and settings. Will be extended whenever a new part is required in a circuit I wish to make.  
 
 ## Parts included in the library
 Supply rails: +3V3, +5V, and GND rails.  
